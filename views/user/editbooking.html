@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Booking</title>
+    <!-- Core -->
+    <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link rel='stylesheet' href="../../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link rel='stylesheet' href='../../assets/vendor/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css'>
+    <link rel="stylesheet" href="../../assets/css/edit-booking.css">
+</head>
+
+
+<svg style="position:absolute; top:0; left:0; z-index:-1" height="100%" width="100%">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="90%" y2="50%">
+              <stop offset="40%" style="stop-color:#7469ff;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ff6faf;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="50%" cy="0" rx="120%" ry="70%" fill="url(#grad1)" />
+    </svg>
+
+
+ <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="confirmEdit" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmEdit">Confirm Changes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div><span>Please confirm your changes</span></div>
+                <p><span>Course Name: </span><span id="confirmCourse"></span></p>
+                <p><span>No of LEARNet Tablet to be Loaned: </span><span id="confirmTablet"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="confirmSubmit" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<body>
+    <fieldset>
+        <div id="content-footer">
+            <a id="backBtn" class="left btn btn-secondary btn-sm" onclick="backNavigation('backUserPage')">
+                <i class="fas fa-arrow-left" style="font-size: 1.3em;"></i>
+            </a>
+        </div>
+    </fieldset>
+
+    <div id="container" class="container-fluid">
+        <div id="content-header" class="row justify-content-center align-items-center">
+            <h2>Edit Booking Details</h2>
+        </div>
+
+
+        <div class="card shadow">
+        <div class="card-body">
+
+
+        <div id="content-body" class="row justify-content-center align-items-center">
+
+            
+            <label class="text-center"></label>
+            <img src="../../assets/img/editbooking.png">
+
+
+            <div>
+                <label class="text-center" for="allBookings">Existing Booking&#40;s&#41;</label>
+                <div id="selectBookings">
+                    <select id="allBookings" onchange="if (this.selectedIndex) moveSelect(this, 'courseName')">
+                        <option value="" disabled hidden selected></option>
+                        <option>test</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div>
+                <label for="bookedPeriod" class="text-center">Previous Session</label>
+                <p id="bookedPeriod" class="text-center">01 Jun 19 - 01 Sept 19</p>
+            </div>
+        
+            <div>
+                <label for="courseName" class="text-center">Revised Course Name</label>
+                <input type="text" id="courseName" placeholder="Eg. AH64D" onkeypress="moveCursor(event, 'tabletNo')">
+                <div id="errorCN"></div>
+            </div>
+            
+            <div>
+                <label for="tabletNo" class="text-center">No of LEARNet Tablet</label>
+                <input type="number" id="tabletNo" placeholder="Eg. 50">
+                <div id="errorTN"></div>
+            </div>
+        </div>
+        <div id="content-footer">
+                <a id="submitBtn" class="btn btn-secondary btn-lg">
+                    <span>Submit</span>
+                </a>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <script src='../../assets/vendor/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script src='../../assets/js/main.js'></script>
+    <script src='../../assets/js/edit-booking.js'></script>
+
+</body>
+</html>

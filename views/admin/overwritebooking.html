@@ -1,0 +1,140 @@
+<!Doctype HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Overwrite Booking</title>
+
+    <link rel='stylesheet' href='../../assets/vendor/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css'>
+    <link rel='stylesheet' href='../../assets/css/overwrite-booking.css'>
+</head>
+
+
+<svg style="position:absolute; top:0; left:0; z-index:-1" height="100%" width="100%">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="90%" y2="50%">
+              <stop offset="40%" style="stop-color:#7469ff;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ff6faf;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="50%" cy="0" rx="120%" ry="70%" fill="url(#grad1)" />
+    </svg>
+
+
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="confirmEdit" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmEdit">Confirm Changes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div><span>Please confirm your changes</span></div>
+                    <p><span>Course Name: </span><span id="confirmCourse"></span></p>
+                    <p><span>Start Date: </span><span id="confirmStart"></span></p>
+                    <p><span>End Date: </span><span id="confirmEnd"></span></p>
+                    <p><span>Tablet No: </span><span id="confirmTablet"></span></p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id = "saveChanges" type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<body>
+
+    
+    <fieldset>
+        <div id="content-footer">
+            <a id="backBtn" class="left btn btn-secondary btn-sm" onclick="backNavigation('backAdminPage')">
+                <i class="fas fa-arrow-left" style="font-size: 1.3em;"></i>
+            </a>
+        </div>
+    </fieldset>
+
+
+    <div id="container" class="container-fluid">
+            <div id="content-header" class="row justify-content-center align-items-center">
+                <h2>Overwrite Booking</h2>
+            </div>  
+
+
+            <div class="card shadow" style="margin-bottom: 2.5vh">
+            <div class="card-body">
+
+
+            <div id="content-body" class="row justify-content-center align-items-center">
+
+        <div id="content-body">
+            <fieldset>
+                <img src="../../assets/img/overwrite.png">
+            </fieldset>
+        </div>
+
+        <fieldset>
+            <div id="clockdisplay" class="container">
+                <script type="text/javascript" src="js/date.js"></script>
+            </div>
+        </fieldset>
+
+
+                <div>
+                    <label class="text-center" for="allBookings">Select Booking Session</label>
+                    <div id="selectBookings">
+                        <select id="allBookings" onchange="if (this.selectedIndex) moveSelect(this, 'startDate')">
+                            <option value="" disabled hidden selected></option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div style = "border-bottom: 1px solid black">
+                        <label for="bookedPeriod" class="text-center">Previous Session</label>
+                        <p id="bookedPeriod" class="text-center">01 Jun 19 - 01 Sept 19</p>
+                    </div>
+
+                    <div>
+                        <label for="courseName">Course name:</label>
+                        <input id="courseName" name="courseName" type="text">
+                        <div id="errorCN"></div>
+                    </div>
+                    <div id="RevisedStartDate">
+                        <label for="startDate">Revised Start Date:</label>
+                        <input id="startDate" name="startDate" type="text">
+                        <div id="errorSD"></div>
+                    </div>
+                    <div id="RevisedEndDate">
+                        <label for="endDate">Revised End Date:</label>
+                        <input id="endDate" name="endDate" type="text">
+                        <div id="errorED"></div>
+                    </div>
+                    <div>
+                        <label for="tabletNo">Number of tablet:</label>
+                        <input id="tabletNo" name="tabletNo" type="text">
+                        <div id="errorTN"></div>
+                    </div>
+                    </div>
+
+<div id="content-footer">
+    
+       <a id="submitBtn" class="btn btn-secondary btn-lg">
+           <span>Submit</span>
+       </a>
+</div>
+</div>
+
+        </div>
+    </div>
+    <script src='../../assets/vendor/jquery/dist/jquery.min.js'></script>
+    <script src='../../assets/vendor/jquery/dist/jquery-ui.min.js'></script>
+    <script src='../../assets/vendor/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script src='../../assets/js/main.js'></script>
+    <script src='../../assets/js/overwrite.js'></script>
+
+</body>
+
+</html>

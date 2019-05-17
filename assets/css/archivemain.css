@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+#content-header {
+    padding: 10px;
+}
+
+#content-header > h2 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#content-body{
+    margin: auto;
+    margin: 18px;
+    font-size: 20px;
+    color: #525f7f;
+}
+
+/*Main page*/
+#content-body label {
+    font-size: 20px;
+    color: #525f7f;
+}
+
+#content-body fieldset{
+    width:calc(100% - 40px);
+    text-align: center;
+    margin: 5px 0;
+}
+
+#errorSD, 
+#errorED, 
+#errorCN, 
+#errorTN{
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#content-body input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+#content-footer {
+    position: relative;
+    margin-top: 30px;
+}
+
+#content-footer a * {
+    margin: 0px 4px;
+    color: #525f7f;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#content-footer .left {
+    float:left;
+}
+
+#content-footer .right {
+    float:right;
+}
+
+/*calendar design*/
+/*the main div that is holding the calendar*/
+.ui-datepicker {
+    width:calc(100% - 40px);
+    font: 12pt Arial;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+}
+
+.ui-datepicker a {
+  text-decoration: none;
+}
+
+/*table header*/
+.ui-datepicker-header {
+    background-color: black;
+    font-weight: bold;
+    line-height: 35px;
+    border: 1px solid black;
+}
+
+/*to hide prev and next as it is default*/
+.ui-datepicker-header a span {
+    display:none;
+}
+
+.ui-datepicker-title > span {
+    color: white;
+    font-size: 1.2rem
+}
+
+.ui-datepicker-title {
+    text-align: center;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    display: inline-block;
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 30px;
+}
+
+.ui-datepicker-prev {
+    float:left;
+}
+
+.ui-datepicker-prev::before {
+    content: "\f104";
+    padding: 2px 3px;
+    color: white;
+}
+
+.ui-datepicker-next {
+    float: right;
+}
+
+.ui-datepicker-next::before {
+    content: '\f105';
+    padding: 2px 3px;
+    color: white;
+}
+
+/*table header days*/
+/*the table that is storing all of the dates*/
+.ui-datepicker table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.ui-datepicker table > thead {
+    background-color: #ededed;
+    border-bottom: 1px solid #bbb;
+}
+
+.ui-datepicker table > thead th {
+    text-transform: uppercase;
+    color:gray;
+    padding: 5px 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 1px 0px 0px white;
+}
+
+/*table body*/
+/*Default style of the td and also adding border right to each td*/
+.ui-datepicker table > tbody td {
+    padding: 0;
+    border-right: 1px solid #bbb;
+    background: #f4f4f4;
+    color: #b4b3b3;
+}
+
+.ui-datepicker tbody td:last-child {
+    border-right: 0px;
+}
+
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #bbb;
+}
+
+.ui-datepicker tbody tr:last-child {
+    border-bottom: 0px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    font-weight: bold;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*When the dates are available for clicking*/
+.ui-datepicker-calendar .ui-state-default {
+    background: #ededed;
+    color: black;
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+    background: #f7f7f7;
+}
+
+/*When the dates are unavailable to click*/
+.ui-datepicker-unselectable .ui-state-default {
+    background: #f4f4f4;
+    color: #b4b3b3;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    color:white;
+    background: #6eafbf;
+    border: 1px solid #55838f;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+}
+
+/*Modal*/
+.modal-title {
+    font-weight: bold;
+    font-size: 28px;
+    color: #6C757D;
+}
+
+.modal-body > div {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.modal-body > p {
+    margin-top: 20px;
+}
+
+.modal-body > p > span:first-child{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal-footer > button {
+    font-weight: bold;
+}
+
+img{
+    height: 30%;
+    width: 30%;
+    vertical-align: middle;
+    border-style: none;
+    margin: auto;
+}
+
+.btn-secondary {
+    color: #212529;
+    border-color: #f7fafc;
+    background-color: #f7fafc;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}

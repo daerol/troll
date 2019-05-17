@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+#content-header {
+    padding: 10px;
+}
+
+#content-header > h2 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#content-body{
+    margin: auto;
+}
+
+#content-body > div{
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #525f7f;
+}
+
+#selectBookings {
+    position:relative;
+}
+
+#selectBookings::after {
+    content: '\f107';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 22px);
+    font-size: 30px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 12px 20px;
+    background:transparent;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+select::-mz-expand {
+    display:none;
+}
+
+select > option {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#content-body > div > * {
+    width: 100%;
+}
+
+#content-body > div > input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+#content-body > div:nth-child(2) {
+    border-bottom: 1px solid #6C757D;
+}
+
+#content-body > div > label {
+    font-size: 20px;
+    color: #525f7f;
+}
+
+#content-body > div:nth-child(n+2) > label {
+    margin-top: 18px;
+}
+ 
+#errorCN, 
+#errorTN{
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#content-footer {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#content-footer a * {
+    margin: 0px 4px;
+    color: #525f7f;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#content-footer .left {
+    float:left;
+}
+
+#content-footer .right {
+    float:right;
+}
+
+/*Modal*/
+.modal-title {
+    font-weight: bold;
+    font-size: 28px;
+    color: #6C757D;
+}
+
+.modal-body > div {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.modal-body > p {
+    margin-top: 20px;
+}
+
+.modal-body > p > span:first-child{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal-footer > button {
+    font-weight: bold;
+}
+
+img{
+    height: 30%;
+    width: 30%;
+    vertical-align: middle;
+    border-style: none;
+    margin: auto;
+}
+
+.btn-secondary {
+    color: #212529;
+    border-color: #f7fafc;
+    background-color: #f7fafc;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}

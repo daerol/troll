@@ -1,0 +1,229 @@
+/*******************************
+
+    Main CSS
+
+********************************/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logoutBtn {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: calc(0.8em + 3vmin);
+}
+
+#nameTag {
+    font-size: calc(1em + 3vmin);
+    font-weight: bold;
+}
+
+#unitTag {
+    font-size: calc(0.2em + 3vmin);
+}
+
+#headCard-wrapper {
+    position: relative;
+    top: calc(20px + 3vh);
+    box-sizing: border-box;
+    padding: 0 5vw;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0.375rem;
+    background-color: #fff;
+    background-clip: border-box;
+    margin-bottom: 0.5em;
+}
+
+.shadow {
+    box-shadow: 1rem 1rem 1rem 0rem rgba(136, 152, 170, 0.15) !important;
+}
+
+#content-body {
+    position: relative;
+    top: calc(40px + 2vh);
+    padding: 1vh 5vw;
+}
+
+#buttonWrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttonStyle {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border:0;
+    padding: calc(5px + 2vmin);
+    text-align: center;
+    width: 32%;
+    font-size: calc(0.5em + 1vmin);
+}
+
+.buttonStyle:focus {
+    outline: 0;
+}
+
+.buttonStyle > span {
+    font-size: calc(1em + 1vmin);
+}
+
+.buttonStyle > span:nth-child(2) {
+    display: inline-block;
+    position: relative;
+    top: calc(5px + 1vmin);
+    color: #A9A9A9;
+    font-weight: 500;
+}
+
+.fa-stack {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.fa-circle {
+    opacity: 1.1;
+}
+
+#firstBtn .fa-circle {
+    color: #e5f7f6;
+}
+
+#secondBtn .fa-circle {
+    color: #dff3fd;
+}
+
+#thirdBtn .fa-circle {
+    color: #e6ebfa;
+}
+
+#fourthBtn .fa-circle {
+    color: #f2ecfc;
+}
+
+#fifthBtn .fa-circle {
+    color: #f8e9f9;
+}
+
+#sixthBtn .fa-circle {
+    color: #ffe4f0;
+}
+
+.fa-edit {
+    color: #62c3ec;
+}
+
+.fa-plus {
+    color: #85e4e0;
+}
+
+.fa-warehouse {
+    color: #6a93eb;
+}
+
+.fa-truck-loading {
+    color: #a07beb;
+}
+
+.fa-tablet-alt {
+    color: #dd98e4;
+}
+
+.fa-archive {
+    color: #f979ab;
+}
+
+#bodyCard-header {
+    color: #808080;
+    font-weight: 500;
+    font-size: calc(0.8em + 2vmin);
+    margin-bottom: calc(0.2em + 1vmin);
+}
+
+#courseDetails {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    color: #808080;
+}
+
+.badge {
+    border-radius: 5%;
+    border: 1px solid black;
+    margin-right: calc(0.8em + 1vmin);
+}
+
+#courseDetails > div > i {
+    font-size: calc(1.2em + 1vw);
+}
+
+#courseDetails > div > span {
+    display: block;
+}
+
+#courseDetails > div > span:first-child {
+    font-size: calc(0.8em + 1vmin);
+    font-weight: bold;
+}
+
+#courseDetails > div > span:nth-child(n+2) {
+    font-size: calc(0.6em + 1vmin);
+}
+
+/*******************************
+
+    Archive CSS
+
+********************************/
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+/* Archive CSS */
+
+.title {
+    color: green;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#archiveContainer {
+    padding: 3em;
+    margin: auto;
+}
+
+button.btn.btn-primary.btn-lg.btn-block.archive-button {
+    display: block;
+    margin-top: 3em;
+}
+
+
+/* Archive Bookings */
+
+#inventoryContainer ul, #bookingContainer ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
